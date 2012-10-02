@@ -9,8 +9,10 @@ html,
 button,
 input,
 select,
-textarea {
-    color: #222;
+textarea,
+a:link,
+a:visited {
+    color: #eee;
 }
 
 body {
@@ -75,27 +77,20 @@ h1,h2,h3,h4,h5 { font-family: Molengo, sans-serif; }
 }
 
 /* ===================
-    ALL: Orange Theme
+    ALL: Colors
    =================== */
 
-.header-container {
-    border-bottom: 20px solid #e44d26;
-}
-
-.footer-container,
-.main aside {
-    border-top: 20px solid #e44d26;
-}
-
-.header-container,
-.footer-container,
-.main aside {
-    background: #f16529;
-}
+body { background:#333; }
 
 .title {
-    color: white;
+    /*color: white;*/
 }
+
+a:hover,
+a:focus {
+    color:#fff;
+}
+
 
 /* ==============
     MOBILE: Menu
@@ -107,24 +102,14 @@ nav ul {
 }
 
 nav a {
-    display: block;
     margin-bottom: 10px;
     padding: 15px 0;
-
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-
-    color: white;
-    background: #e44d26;
 }
 
-nav a:hover,
-nav a:visited {
-    color: white;
-}
-
-nav a:hover {
+a:hover {
     text-decoration: underline;
 }
 
@@ -133,20 +118,14 @@ nav a:hover {
    ============== */
 
 .main {
-    padding: 30px 0;
+   /* padding: 10px 0 30px 0;*/
 }
 
 .main article h1 {
     font-size: 2em;
 }
 
-.main aside {
-    color: white;
-    padding: 0px 5% 10px;
-}
-
 .footer-container footer {
-    color: white;
     padding: 20px 0;
 }
 
@@ -164,12 +143,12 @@ nav a:hover {
 
 
 
+ul { padding-left:18px; }
 
 
+/*section, aside { padding-top:10px; }*/
 
-
-
-
+.main-container { padding-bottom:30px; }
 
 
 
@@ -187,10 +166,6 @@ nav a:hover {
    ==================== */
 
     nav a {
-        float: left;
-        width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
         margin-bottom: 0;
     }
 
@@ -217,17 +192,6 @@ nav a:hover {
 
 @media only screen and (min-width: 768px) {
 
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
-
-    .header-container,
-    .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-    }
-
 /* ============
     WIDE: Menu
    ============ */
@@ -252,6 +216,7 @@ nav a:hover {
 
     .main aside {
         float: right;
+        padding-top:0;
         width: 28%;
     }
 }
@@ -342,9 +307,11 @@ nav a:hover {
         text-shadow: none !important;
     }
 
+    
+
     a,
     a:visited {
-        text-decoration: underline;
+        text-decoration: none;
     }
 
     a[href]:after {
@@ -399,4 +366,6 @@ nav a:hover {
     h3 {
         page-break-after: avoid;
     }
+
+   /* article { page-break-after: always; }*/
 }
