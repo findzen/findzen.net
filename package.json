@@ -1,0 +1,24 @@
+{
+  "name": "findzen.net",
+  "description": "The best project ever.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/findzen/findzen.net",
+  "author": {
+    "name": "Justin Taylor",
+    "email": "howto@findzen.net",
+    "url": "http://findzen.net"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/findzen/findzen.net"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/findzen/findzen.net/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "node-build-script": "http://nodeload.github.com/h5bp/node-build-script/tarball/dev"
+  }
+}
